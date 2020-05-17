@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="400a15fa-dd0e-4bab-a491-7bef477f9398" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.php_cs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.php_cs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +154,10 @@
     <property name="settings.editor.selected.configurable" value="settings.php.quality.tools" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/data" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/storage/app/public" />
     </key>
@@ -172,7 +178,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589590018207</updated>
-      <workItem from="1589590019977" duration="59152000" />
+      <workItem from="1589590019977" duration="60384000" />
     </task>
     <task id="LOCAL-00001" summary="updated READMe file">
       <created>1589693380301</created>
@@ -188,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589693574985</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updated READMe file">
+      <created>1589693666115</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589693666115</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,10 +232,10 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1978" y="311" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1589601749813" />
-    <state x="1834" y="152" key="CommitChangelistDialog2" timestamp="1589693574647">
+    <state x="1834" y="152" key="CommitChangelistDialog2" timestamp="1589693665935">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state x="1834" y="152" key="CommitChangelistDialog2/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1589693574647" />
+    <state x="1834" y="152" key="CommitChangelistDialog2/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1589693665935" />
     <state x="1728" y="229" key="DiffContextDialog" timestamp="1589693364019">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
@@ -236,10 +249,10 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1749" y="190" key="SettingsEditor/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1589591561096" />
-    <state x="1840" y="289" key="Vcs.Push.Dialog.v2" timestamp="1589693585387">
+    <state x="1840" y="289" key="Vcs.Push.Dialog.v2" timestamp="1589693672199">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state x="1840" y="289" key="Vcs.Push.Dialog.v2/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1589693585387" />
+    <state x="1840" y="289" key="Vcs.Push.Dialog.v2/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1589693672199" />
     <state x="1432" y="311" width="1280" height="715" key="dock-window-1" timestamp="1589688950773">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>

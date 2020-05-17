@@ -63,7 +63,7 @@ Accept: application/json
 Content-Type: application/json
 ```` 
 
-## Registration
+#### Registration
 ```
 POST /api/register HTTP/1.1
 
@@ -91,7 +91,7 @@ HTTP/1.1 201
     }
 }
 ````
-##Login
+#### Login
 ```
 POST /api/login HTTP/1.1
 Payload: {
@@ -116,7 +116,7 @@ HTTP/1.1 200
 }
 ````
 
-##Logout
+#### Logout
 ```
 POST /api/logout HTTP/1.1
 Authorization: Bearer api_token
@@ -136,7 +136,7 @@ HTTP/1.1 200
 }
 ````
 
-##Add new property
+#### Add new property
 ```
 POST /api/properties HTTP/1.1
 Payload: {
@@ -152,7 +152,7 @@ Response
 
 HTTP/1.1 200
 ````
-##Add/Update an analytic to a property
+#### Add/Update an analytic to a property
 ```
 POST /api/properties/analytic HTTP/1.1
 Payload: {
@@ -169,7 +169,7 @@ Response
 HTTP/1.1 200
 ````
 
-##Get all analytics to a property
+#### Get all analytics to a property
 ```
 GET /api/properties/{property_id}/analytics HTTP/1.1
 Payload: {
@@ -190,7 +190,7 @@ HTTP/1.1 200
 }
 ````
 
-##Get all property analytics summary for a suburb/state/country 
+#### Get all property analytics summary for a suburb/state/country 
 ```
 GET /api/properties/analytics/{type}/{value} HTTP/1.1
 Payload: {

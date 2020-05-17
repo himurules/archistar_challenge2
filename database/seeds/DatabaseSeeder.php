@@ -17,6 +17,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UserSeeder::class);
-        Excel::import(new DataImport, 'BackEndTest_TestData_v1.1.xlsx', 'public');
+        Excel::import(new DataImport, base_path().'/resources/data/BackEndTest_TestData_v1.1.xlsx');
     }
 }
