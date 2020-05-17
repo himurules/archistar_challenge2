@@ -63,7 +63,7 @@ Accept: application/json
 Content-Type: application/json
 ```` 
 
-##Registration
+## Registration
 ```
 POST /api/register HTTP/1.1
 
