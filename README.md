@@ -1,79 +1,215 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
-
+# Laravel Based API With Authentication
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+A laravel based REST API project to maintain Properties and their Analytics.  
 </p>
 
-## About Laravel
+## Dependencies
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Following dependencies for the project 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **[PHP ^7.2.5](https://www.php.net/releases/7_2_5.php)**
+- **[Composer](https://getcomposer.org/download/)**
+- **[Node.js and npm](https://www.npmjs.com/get-npm)**
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Installation
 
-## Learning Laravel
+Checkout the [repository](https://github.com/himurules/archistar_challenge2.git) in the desired root folder.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Run ***composer install*** to install required libraries.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+Create .env file ***cp .env.example .env***
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Generate the project key with the following command
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
-- [云软科技](http://www.yunruan.ltd/)
+***php artisan key:generate***
 
-## Contributing
+## Configurations
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+In the .env file in the root directory, specify the following
 
-## Code of Conduct
+- Database Connection Configuration
+    - DB_CONNECTION=mysql
+    - DB_HOST=(db_host)
+    - DB_PORT=3306
+    - DB_DATABASE=(database name)
+    - DB_USERNAME=(username)
+    - DB_PASSWORD=(password)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Run the following command for database migration and seeding
 
-## Security Vulnerabilities
+***php artisan setup***
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+To run migration and seeding manually, see below
+ 
+## Database Migration
 
-## License
+Run the following command to set up database tables
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+***php artisan migrate*** 
+
+## Database Seeder
+
+Run the following command to set up database tables
+
+***php artisan db:seed*** 
+
+## API Documentation
+
+The following are applied throughout the API
+````
+Host: yourhost eg. localhost:8000
+Accept: application/json
+Content-Type: application/json
+```` 
+
+####Registration
+```
+POST /api/register HTTP/1.1
+
+Payload: {
+    "name": "Himanshu", 
+    "email": "himanshu.kotnala@gmail.com", 
+    "password": "himanshu", 
+    "password_confirmation": "himanshu”
+}
+```
+
+````
+Response 
+
+HTTP/1.1 201 
+
+{
+    "data":{
+        "name":"Himanshu",
+        "email":"himanshu.kotnala@gmail2.com",
+        "updated_at":"2020-05-17T04:49:40.000000Z",
+        "created_at":"2020-05-17T04:49:40.000000Z",
+        "id":3,
+        "api_token":"WdGxu7WTFQvcg4AT8ZnmFpIUCo0MfpsdhP4uVSk6qj2xL9Pz1CUFaOXJi6IM"
+    }
+}
+````
+####Login
+```
+POST /api/login HTTP/1.1
+Payload: {
+    "email": "himanshu.kotnala@gmail2.com",  
+    "password": "himanshu"
+}
+```
+````
+Response 
+
+HTTP/1.1 200
+
+{
+    "data":{
+        "name":"Himanshu",
+        "email":"himanshu.kotnala@gmail2.com",
+        "updated_at":"2020-05-17T04:49:40.000000Z",
+        "created_at":"2020-05-17T04:49:40.000000Z",
+        "id":3,
+        "api_token":"WdGxu7WTFQvcg4AT8ZnmFpIUCo0MfpsdhP4uVSk6qj2xL9Pz1CUFaOXJi6IM"
+    }
+}
+````
+
+####Logout
+```
+POST /api/logout HTTP/1.1
+Authorization: Bearer api_token
+OR
+Payload: {
+    "api_token": "yourapitoken"
+}
+```
+
+````
+Response 
+
+HTTP/1.1 200 
+
+{
+    'data' => 'User logged out.'
+}
+````
+
+####Add new property
+```
+POST /api/properties HTTP/1.1
+Payload: {
+    "suburb": "parramatta",  
+    "state": "nsw",
+    "country": "australia",
+    "api_token": "yourapitoken"
+}
+```
+
+````
+Response 
+
+HTTP/1.1 200
+````
+####Add/Update an analytic to a property
+```
+POST /api/properties/analytic HTTP/1.1
+Payload: {
+    "property_id": "1", 
+    "analytic_type_id": "1", 
+    "value": 35
+    "api_token": "yourapitoken"
+}
+```
+
+````
+Response 
+
+HTTP/1.1 200
+````
+
+####Get all analytics to a property
+```
+GET /api/properties/{property_id}/analytics HTTP/1.1
+Payload: {
+    "api_token": "yourapitoken"
+}
+```
+
+````
+Response 
+
+HTTP/1.1 200
+{
+    "data":
+        [
+            {"id":"1","type":"analyticTypes","attributes":{"name":"max_Bld_Height_m","units":"m","is_numeric":1,"num_decimal_places":1}},
+            {"id":"2","type":"analyticTypes","attributes":{"name":"min_lot_size_m2","units":"m2","is_numeric":1,"num_decimal_places":0}}
+        ]
+}
+````
+
+####Get all property analytics summary for a suburb/state/country 
+```
+GET /api/properties/analytics/{type}/{value} HTTP/1.1
+Payload: {
+    "api_token": "yourapitoken"
+}
+egs: 
+/api/properties/analytics/suburb/parramatta
+/api/properties/analytics/state/nsw
+```
+
+````
+Response 
+
+HTTP/1.1 200
+{
+    [
+        {"id":"1","type":"analyticsSummary","attributes":{"name":"max_Bld_Height_m","minValue":10,"maxValue":39,"medianValue":20.571428571428573,"withValue%":77.77777777777779,"withoutValue%":22.22222222222222}},
+        {"id":"2","type":"analyticsSummary","attributes":{"name":"min_lot_size_m2","minValue":35,"maxValue":1101,"medianValue":661,"withValue%":55.55555555555556,"withoutValue%":44.44444444444444}},
+        {"id":"3","type":"analyticsSummary","attributes":{"name":"fsr","minValue":1.0745581883243,"maxValue":3.3463876138377,"medianValue":2.449284661629129,"withValue%":38.88888888888889,"withoutValue%":61.111111111111114}}
+    ]
+}
+````

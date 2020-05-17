@@ -52,7 +52,7 @@ class PropertiesController extends Controller
         $requestData = $request->all();
         $requestData['id'] = intval(Properties::max('id')) + 1;
         $property = Properties::create($requestData);
-        return response()->json(new PropertiesResource($property), 201);
+        return response()->json(null, 201);
     }
 
     /**
