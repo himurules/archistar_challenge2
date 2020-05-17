@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="400a15fa-dd0e-4bab-a491-7bef477f9398" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.php_cs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.php_cs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PropertiesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PropertiesController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,12 +172,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589590018207</updated>
-      <workItem from="1589590019977" duration="58823000" />
+      <workItem from="1589590019977" duration="59012000" />
     </task>
+    <task id="LOCAL-00001" summary="updated READMe file">
+      <created>1589693380301</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589693380301</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated READMe file" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated READMe file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1828" y="213" key="#Mess_Detector" timestamp="1589591546775">
@@ -203,6 +212,14 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1978" y="311" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1589601749813" />
+    <state x="1834" y="152" key="CommitChangelistDialog2" timestamp="1589693380034">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1834" y="152" key="CommitChangelistDialog2/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1589693380034" />
+    <state x="1728" y="229" key="DiffContextDialog" timestamp="1589693364019">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1728" y="229" key="DiffContextDialog/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1589693364019" />
     <state x="1995" y="374" key="NewPhpClassDialog" timestamp="1589602080043">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
@@ -212,6 +229,10 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1749" y="190" key="SettingsEditor/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1589591561096" />
+    <state x="1840" y="289" key="Vcs.Push.Dialog.v2" timestamp="1589693388181">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1840" y="289" key="Vcs.Push.Dialog.v2/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1589693388181" />
     <state x="1432" y="311" width="1280" height="715" key="dock-window-1" timestamp="1589688950773">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
